@@ -1,15 +1,16 @@
 # import the libraries
+import streamlit as st
 import openai
 #from app.config import Config
 import re
-from assistant.config import Config
+#from assistant.config import Config
 import time
 
 # getting the assistant secret key
-ASSISTANT_ID = Config.OPENAI_ASSISTANT_ID
+ASSISTANT_ID = st.secrets["open_ai_credentials"]["openai_assistant_id"]
 
 # getting the secret key
-API_KEY = Config.OPENAI_API_KEY
+API_KEY = st.secrets["open_ai_credentials"]["openai_api_key"]
 
 # creating the key
 openai.api_key = API_KEY

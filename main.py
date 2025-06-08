@@ -10,8 +10,6 @@ st.image("logo.jpeg", width=100)
 # page title
 st.write("### Zé Agro")
 
-st.write("Primeiros caracteres da chave:", st.secrets["open_ai_credentials"]["openai_api_key"][:5])
-
 # page subtitle
 st.write("##### O assistente do agricultor, com informações oficiais da EMBRAPA.")
 
